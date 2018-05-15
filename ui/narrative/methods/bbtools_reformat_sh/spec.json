@@ -11,8 +11,8 @@
     },
     "parameters": [ 
         {
-            "id": "parameter_1",
-            "optional": true,
+            "id": "input_sequence_file",
+            "optional": false,
             "advanced": false,
             "allow_multiple": false,
             "default_values": [ "" ],
@@ -26,30 +26,20 @@
         "service-mapping": {
             "url": "",
             "name": "bbtools_reformat_sh",
-            "method": "your_method",
+            "method": "bbtools_reformat_sh",
             "input_mapping": [
                 {
                     "narrative_system_variable": "workspace",
-                    "target_argument_position": 0
+                    "target_property": "bbtools_reformat_sh"
                 },
                 {
-                    "input_parameter": "parameter_1",
-                    "target_argument_position": 1
+                    "input_parameter": "input_sequence_file",
+                    "target_property": "input_sequence_file",
+                    "target_type_transform": "resolved-ref"
                 }
             ],
             "output_mapping": [
-                {
-                    "service_method_output_path": [0],
-                    "target_property": "output"
-                },
-                {
-                    "input_parameter": "parameter_1",
-                    "target_property": "input"
-                },
-                {
-                    "narrative_system_variable": "workspace",
-                    "target_property": "workspaceName"
-                }
+
             ]
         }
     },

@@ -41,3 +41,22 @@ class bbtools_reformat_sh:
                      'git_commit_hash': self.GIT_COMMIT_HASH}
         #END_STATUS
         return [returnVal]
+
+
+    def filter_contigs(self, ctx, params):
+        """
+        :param workspace_name: instance of String
+        :param params: instance of type "ContigFilterParams" (Input
+           parameters) -> structure: parameter "min_length" of Long,
+           parameter "assembly_ref" of String
+        :returns: instance of type "ContigFilterResults" (Output results) ->
+           structure:
+        """
+        # ctx is the context object
+        # return variables are: returnVal
+        #BEGIN filter_contigs
+        # print(params['min_length'], params['assembly_ref'])
+        print(params['input_sequence_file'])
+        returnVal = {}
+        #END filter_contigs
+        return [returnVal]

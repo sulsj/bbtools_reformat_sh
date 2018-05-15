@@ -87,3 +87,13 @@ class bbtools_reformat_shTest(unittest.TestCase):
         # Check returned data with
         # self.assertEqual(ret[...], ...) or other unittest methods
         pass
+    
+    def test_filter_contigs(self):
+        ref = "14672/2/1"
+        result = self.getImpl().filter_contigs(self.getContext(), {
+            'workspace_name': self.getWsName(),
+            'input_sequence_file': ref
+            # 'min_length': 100
+        })
+        print result
+        # TODO -- assert some things (later)

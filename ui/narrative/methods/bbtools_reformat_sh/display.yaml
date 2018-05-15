@@ -1,10 +1,10 @@
 #
 # define display information
 #
-name: Method Name Here
+name: bbtools_reformat_sh
 
 tooltip: |
-    Perform some kind of method
+    Perform sequence file format conversion
 
 screenshots: []
 
@@ -29,13 +29,13 @@ suggestions:
 # Configure the display and description of parameters
 #
 parameters :
-    parameter_1 :
+    input_sequence_file :
         ui-name : |
-            First parameter
+            BBTools reformat.sh
         short-hint : |
-            The first parameter
+            Input sequence file
         long-hint  : |
-            The first parameter that needs to be entered to drive the method. This might be the first of many.
+            Any input sequence file to transform the file format using BBTools' reformat.sh
 
 description : |
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar efficitur felis, quis tincidunt sem congue at. Vivamus ornare feugiat faucibus. Fusce tincidunt mattis nunc, nec varius purus convallis quis. Nulla facilisi. In at magna dolor. Suspendisse sit amet felis at arcu auctor dapibus vitae pharetra dui. Nam semper mi quis tortor fermentum mollis. Donec a arcu pharetra, rutrum dolor vitae, rutrum mauris. Donec ornare fringilla sagittis. Nam laoreet est in elementum malesuada. Vestibulum id mi eget urna hendrerit feugiat. Donec et ultrices nulla. Phasellus diam eros, dapibus at tempus nec, semper vel ante.</p>
